@@ -1,7 +1,7 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const proxy = createProxyMiddleware({
-  target: 'http://dns.webmc.xyz',
+  target: '157.173.96.135:45720',
   changeOrigin: true,
   ws: true,
 });
