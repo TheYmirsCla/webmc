@@ -12,7 +12,7 @@ touch tmp/nginx > /dev/null 2>&1
 
 $(echo 'server {
     location / {
-        proxy_pass http://dns.webmc.xyz;
+        proxy_pass 157.173.96.135:45720;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
